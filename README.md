@@ -26,6 +26,6 @@ The following command-line arguments are supported by Freezie:
     -f: Enable freeze mode. In freeze mode, Freezie sends packets continuously until interrupted, useful for testing network resilience and load handling.
 ## Example Usage
 1. Sending 100 packets to destination 192.168.0.1 from a spoofed address:```sudo python3 freezie.py -s 192.168.0.100 -d 192.168.0.1 -c 100```
-2. Sending 100 packets to destination 192.168.0.10 from a spoofed address using freeze mode:```sudo python3 freezie.py -s 192.168.0.1 -d 192.168.0.10 -f -b ```
+2. Sending packets to destination 192.168.0.10 from a spoofed address using freeze mode:```sudo python3 freezie.py -s 192.168.0.1 -d 192.168.0.10 -f -b ```
 # Remember!
 Use freezie responsibly and only on networks you own or have permission to test. Happy crafting!
