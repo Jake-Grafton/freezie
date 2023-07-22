@@ -3,7 +3,7 @@ Freezie is a command-line tool inspired by hping3, designed for sending customiz
 ## Requirements
 Before using Freezie, make sure you have the following requirements installed on your system:
 1. **Python 3**: Freezie is implemented in Python, so you need to have Python 3 installed. You can download Python 3 from the official website: **Python.org**
-2. **pip3**: 'pip3' is the package installer for Python 3. If you have Python 3 installed, 'pip3' usually comes with it by default.
+2. **pip3**: pip3 is the package installer for Python 3. If you have Python 3 installed, pip3 usually comes with it by default.
 3. **scapy**: Freezie utilizes Scapy, a powerful interactive packet manipulation program. You can install Scapy using pip3 with the following command:
 ```pip3 install scapy```
 ## Help Page
