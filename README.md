@@ -19,13 +19,14 @@ The following command-line arguments are supported by Freezie:
 
     -c <packet_count>: Set the number of packets to send.
 
-    -b <bytes_to_add>: Add extra bytes to the data packet. This can be used for payload customization.
+    -b <bytes_to_add>: Add extra bytes to the data packet. This can be used for a heavier impact when testing.
 
     -p <destination_port>: Specify the destination port for sending the traffic.
 
     -f: Enable freeze mode. In freeze mode, Freezie sends packets continuously until interrupted, useful for testing network resilience and load handling.
 ## Example Usage
-1. Sending 100 packets to destination 192.168.0.1 from a spoofed address:```sudo python3 freezie.py -s 192.168.0.100 -d 192.168.0.1 -c 100```
-2. Sending packets to destination 192.168.0.10 from a spoofed address using freeze mode:```sudo python3 freezie.py -s 192.168.0.1 -d 192.168.0.10 -f -b ```
+1. Sending 100 packets to destination 192.168.1.1 from a spoofed address:```sudo python3 freezie.py -s 192.168.1.100 -d 192.168.1.1 -c 100```
+2. Sending continuous packets to destination 192.168.1.10 from a spoofed address using freeze mode:```sudo python3 freezie.py -s 192.168.1.100 -d 192.168.1.10 -f```
+3. (Be in an administrator terminal before testing this on Windows.) Sending continuous packets to destination 192.168.1.1 from 192.168.1.50 using freeze mode:```python3 freezie.py -s 192.168.1.50 -d 192.168.1.1 -f```
 # Remember!
 Use freezie responsibly and only on networks you own or have permission to test. Happy crafting!
